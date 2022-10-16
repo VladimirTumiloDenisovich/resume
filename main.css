@@ -13,11 +13,6 @@ body {
     padding: 5px;
 }
 
-.photo {
-    height: 400px;
-    width: 300px;
-}
-
 header {
     text-align: center;
     display: table;
@@ -125,4 +120,9 @@ width: 320px;
 .primary > div {
     position: sticky;
     top: 20px; 
+}
+
+.photo {
+    height: 400px;
+    width: 300px;
 }
