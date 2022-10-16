@@ -14,8 +14,8 @@ body {
 }
 
 .photo {
-    height: auto;
-    width: auto;
+    height: 400px;
+    width: 300px;
 }
 
 header {
