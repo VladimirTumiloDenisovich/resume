@@ -29,7 +29,6 @@ function getRandomArbitrary(min, max) {
         if (randomArray.includes(ran) === false) {
             randomArray.push(ran)
             ran = getRandomArbitrary(0, text.length - 1)
-            console.log(randomArray)
             i++
         } else if (randomArray.includes(ran) === true) {
             ran = getRandomArbitrary(0, text.length - 1)
