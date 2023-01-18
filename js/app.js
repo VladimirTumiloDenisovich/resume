@@ -25,11 +25,11 @@ function getRandomArbitrary(min, max) {
     let i = 0
     randomArray = []
     let ran = getRandomArbitrary(0, text.length - 1)
-    const isRandomArray = randomArray.includes(ran)
     while (i < text.length) {
         if (randomArray.includes(ran) === false) {
             randomArray.push(ran)
             ran = getRandomArbitrary(0, text.length - 1)
+            console.log(randomArray)
             i++
         } else if (randomArray.includes(ran) === true) {
             ran = getRandomArbitrary(0, text.length - 1)
@@ -47,9 +47,18 @@ Object.prototype.getRandomF = function() {
         i++
     }
     result = result.toLowerCase().split('')
-    result[result.indexOf(' ') + 1] = result[result.indexOf(' ') - 1].toUpperCase()
-    result[result.indexOf('-') + 1] = result[result.indexOf('-') - 1].toUpperCase()
+    if (result.indexOf(' ') !== result.length) {
+    result[result.indexOf(' ') + 1] = result[result.indexOf(' ') + 1].toUpperCase()
+    }  
+    if (result.indexOf('-') !== result.length) {   
+    result[result.indexOf('-') + 1] = result[result.indexOf('-') + 1].toUpperCase()
+    }
+    if (result.indexOf('-') !== result[0]) {
     result[0] = result[0].toUpperCase()
+    }
+    if (result.indexOf(' ') !== result[0]) {
+    result[0] = result[0].toUpperCase()
+    }
     return result.join('')
 }
 
