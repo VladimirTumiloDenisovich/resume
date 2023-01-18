@@ -46,10 +46,10 @@ Object.prototype.getRandomF = function() {
         i++
     }
     result = result.toLowerCase().split('')
-    if (result.indexOf(' ') !== result.length) {
+    if (result.indexOf(' ') !== result.length - 1) {
     result[result.indexOf(' ') + 1] = result[result.indexOf(' ') + 1].toUpperCase()
     }  
-    if (result.indexOf('-') !== result.length) {   
+    if (result.indexOf('-') !== result.length - 1) {   
     result[result.indexOf('-') + 1] = result[result.indexOf('-') + 1].toUpperCase()
     }
     if (result.indexOf('-') !== result[0]) {
