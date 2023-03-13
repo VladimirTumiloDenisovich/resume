@@ -1,24 +1,40 @@
 <!DOCTYPE html>
 <html lang="ru">
-<body>
+<body class="theme white">
+    <div id="p_prldr"><div class="contpre"><span class="svg_anm"></span><br>Подождите<br><small>идет загрузка</small></div></div>
      <head>
         <meta charset="UTF-8">
+        <link rel="stylesheet" type="text/css" href="css/blackWhite.css">
         <link rel="stylesheet" type="text/css" href="css/style.css">
         <link rel="icon" type="images/icon" href="media/favicon.ico">
         <title>Резюме Тумило-Денисович</title>
     </head>    
-<header>
-    <h1 id="name">Тумило-Денисович Владимир</h1>
-    <button class="cnob" onclick="getStart();">Начальное значение</button>
+<header class="block">
+    <div class="dropdown">
+
+
+        <img src="media/Hamburger_icon.png" class="dropbtn menu-theme white">
+        <div class="dropdown-content white">
+            <span class="btn btn-theme menu-theme white">Тёмная тема</span>
+            <span class="btn btn-language menu-theme white">English</span>
+        </div>
+
+
+        
+    </div>
+    <div class="name">
+        <h1 id="name">Тумило-Денисович Владимир</h1>
+    </div>
+    <!-- <button class="cnob" onclick="getStart();">Начальное значение</button>
     <div></div>
     <button class="cnob" onclick="getReverse();">Перевернуть</button>
     <div></div>
-    <button class="cnob" onclick="getRandom();">Рандом</button>
+    <button class="cnob" onclick="getRandom();">Рандом</button> -->
 </header>
 <main>
 <div class="container">
 <div class="content-wrapper">
-<div class="content">
+<div class="content theme white">
 	<nav id=“menu”>
         <h2>Оглавление</h2>
         
@@ -99,29 +115,35 @@
     </div>
     <aside class="primary">
         <div>
-	<img src="media/Photo_me.jpg" alt="Photo" id="photo">
-        <p>Мужчина, 32 года, родился 5 марта 1990</p>
-        <h2>Контакты</h2>
-        <p>+7 (917) 512-96-87 (WhatsApp)</p>
-        <p>Tumilo.Denisovich@gmail.com</p>
-        <p>Только удаленная работа</p>
-        <a href="https://vk.com/vladimir_march" class="link-vk" target="_blank">
-           <img src="media/vkW.png" class="size-vk">
-            <i class="fab fa-vk vk"></i>
-        </a>
-        <a href="#" class="link-in" target="_blank">
-           <img src="media/instagramW.png" class="size-in">
-            <i class="fab fa-instagram instagram"></i>
-        </a>
-        <a href="#" class="link-hh" target="_blank">
-           <img src="media/hhW.png" class="size-hh">
-            <i class="fab fa-hh hh"></i>
-        </a>
-    </div>
+            <img src="media/Photo_me.jpg" alt="Photo" class="theme white" id="photo">
+            <p>Мужчина, 32 года, родился 5 марта 1990</p>
+            <h2>Контакты</h2>
+            <p>+7 (917) 512-96-87 (WhatsApp)</p>
+            <p>Tumilo.Denisovich@gmail.com</p>
+            <p>Только удаленная работа</p>
+            <a href="https://vk.com/vladimir_march" class="link-vk icon theme white" target="_blank">
+                <img src="media/vkW.png" class="size-vk">
+                <i class="fab fa-vk vk"></i>
+            </a>
+            <a href="#" class="link-in icon theme white" target="_blank">
+                <img src="media/instagramW.png" class="size-in">
+                <i class="fab fa-instagram instagram"></i>
+            </a>
+            <a href="#" class="link-hh icon theme white" target="_blank">
+                <img src="media/hhW.png" class="size-hh">
+                <i class="fab fa-hh hh"></i>
+            </a>
+        </div>
     </aside>
 </div>
 </div> 
 </main>
-    <script src="js/app.js"></script>
+    <!-- <script src="js/app.js"></script> -->
+    <script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/1.10.1/jquery.min.js"></script>  
+    
+
+    <script src="js/load.js"></script>
+    <script src="js/cookies.js"></script>
+    <script src="js/blackWhite.js"></script>
   </body>
 </html> 

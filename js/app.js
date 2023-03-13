@@ -1,6 +1,6 @@
 const stringName = document.querySelector('#name')
 const colors = ['#FF0000', '#FF8000', '#FFFF00', '#80FF00', '#0080FF', '#0000FF', '#8000FF']
-const text = ('Тумило-Денисович Владимир')
+const startName = document.querySelector('#name').textContent
 let randomArray = [0, ]
 
 //Разворот
@@ -70,106 +70,38 @@ const getRandom = () => {
 //Начальное значение
 const getStart = () => {
     setTimeout(() => {
-        stringName.textContent = text
+        stringName.textContent = startName
     }, 500)
 }
 
+//toCamelCase
+const toText = ('A-C-D')
+//the_stealth_warrior
+//The-Stealth-Warrior
+function toCamelCase(str){
+    let result = ''
+    for (i = 0; i < str.length; i++) {
+        if (str[i] === ' ' & i !== str.length - 1) {
+            result+= str[i + 1].toUpperCase()
+          i++
+        } else if (str[i] === '-' & i !== str.length -1) {
+            result+= str[i + 1].toUpperCase()
+          i++
+        } else if (str[i] === '_' & i !== str.length -1) {
+            result+= str[i + 1].toUpperCase()
+          i++
+        } else {
+            result+= str[i]
+        }
+    }
+    return result
+}
+console.log(toCamelCase(toText))
 
 
 
-
-
-//function changeColor() {
-//    for (let i = 0; i < 100; i++) {
-//        setInterval(rainbow(), 500)
-//    }
-//}
-
-//function changeColor() {
-//    setInterval(rainbow(), 500)
-    
-//}
-
-//function test() {
-//    let s = getRandomArbitrary(0, colors.length - 1)
-//    stringName.style.color = colors[s]
-//}
-
-
-//const rainbow = () => {
-//    stringName.style.color = 'red'
-//}
-//
-//console.log(stringName[1])
-
-//let i = 0
-//let r = 0
-//const test = stringName.textContent.toString()
-//function rainbow() {
-//    while (i < stringName.textContent.length - 1) {
-//        if (r <= colors.length - 1) {
-//            r++
-//            i++
-//            return test[1] = colors[r]
-//        } else {
-//            r = 0
-//            i++
-//            return stringName.style.color = colors[r]
-//        }
-//        }
-//}
-
-
-//function rainbow() {
-//    
-//    while (i < stringName.textContent.length - 1) {
-//        stringName.style.color = colors[r]
-//        i++
-//        r++
-//        
-//        }
-//    }
-
-
-
-
-
-
-
-
-
-
-
-//const text = 'Просто текст!'
-//
-////const timer = (string, array) => {
-////    let i = 0
-////    let r = 0
-////    while (i > string.length - 1) {
-////    r = getRandomArbitrary(0, array.length - 1)
-////    console.log(r)
-////    i++
-////}
-////    return r
-////}
-//
-//function timer(string, array) {
-//    let i = 0
-//    let r = 0
-//    while (i > string.length - 1) {
-//        if (r <= array.length - 1) {
-//            r++
-//            console.log(r)
-//            console.log(string)
-//            i++
-//        } else {
-//            r = 0
-//        }
-//}
-//    return r
-//}
-//
-//
-//console.log(getRandomArbitrary(0, colors.length - 1))
-//console.log(timer('Hello!', [1, 0, 5, 23]))
-// timer('Hello!', [1, 0, 5, 23])
+        // if (str.indexOf(' ') !== str.length - 1) {
+        //     result+= str[str.indexOf(' ') + 1].toUpperCase()
+        //     i++
+        //     i++
+        // }

@@ -1,33 +1,117 @@
-body {
+#p_prldr{
+    position: fixed;
+    left: 0;
+    top: 0;
+    right:0;
+    bottom:0;
     background: #DCDCDC;
-}
-.main > section > h2 {
-    font-weight: bold;
-    text-align: center;
-    margin: 25px;
-}
-.main > section > h4 {
-    color: #696969;
-    text-align: left;
-    margin: 0 0 0 10px;
-    padding: 5px;
-}
+    z-index: 30;}
+     
+    .contpre small{font-size:25px;}
+     
+    .contpre{
+    width: 250px;
+    height: 100px;
+    position: absolute;
+    left: 50%;top: 48%;
+    margin-left:-125px;
+    margin-top:-75px;
+    color:rgb(0, 0, 0);
+    font-size:40px;
+    letter-spacing:-2px;
+    text-align:center;
+    line-height:35px;}
+     
+    #p_prldr .svg_anm {
+    position: absolute;
+    width: 41px;
+    height: 41px;
+    background: url(/media/tail-spin.svg) center center no-repeat;
+    background-size:41px;    
+    margin: -16px 0 0 -16px;}
+
+
+
+
+
+
 header {
-    text-align: center;
-    display: table;
-box-sizing: border-box;
 height: 60px;
 line-height: 24px;
-margin-bottom: 10px;
-margin-left: auto;
-margin-right: auto;
-margin-top: 40px;
-max-width: 1220px;
-padding-bottom: 0px;
+margin-bottom: 20px;
+margin-top: 15px;
 padding-left: 20px;
-padding-right: 20px;
-padding-top: 0px;
-width: 1220px;
+}
+
+header.block {
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    line-height: 24px;
+    margin-left: auto;
+    margin-right: auto;
+    width: 1220px;
+}
+
+.dropdown {
+    position: relative;
+    display: inline-block;
+    margin-left: 0px;
+}
+
+.dropbtn {
+    position: relative;
+    padding: 4px 13px;
+    width: 30;
+    height: 30px;
+    padding: 4px 13px;
+    border-radius: 7px;
+    cursor: pointer;
+    box-shadow: -3px -1px 10px 0px rgba(0, 0, 0, 0.3);
+}
+
+.dropbtn:hover {
+    background-color:rgba(0, 150, 0, .2);
+}
+
+.dropdown-content {
+    display: none;
+    position: absolute;
+    min-width: 160px;
+    z-index: 1;
+    background-color: #ffffff;
+    border-radius: 5px;
+    box-shadow: -10px -4px 15px 3
+    px rgba(0, 0, 0, .5);
+}
+
+.dropdown-content span {
+    display: block;
+}
+
+.dropdown:hover .dropdown-content {
+    display: block;
+}
+
+.btn {
+    font-size: large;
+    padding: 4px 13px;
+    border-radius: 7px;
+    cursor: pointer;
+}
+
+.btn:hover {
+    background-color:rgba(0, 150, 0, .2);
+}
+
+.btn:active {
+    background-color:rgba(0, 200, 0, .5);
+}
+
+div.name {
+    display: inline-block;
+    margin-left: 20%;
+
 }
 
 li {
@@ -37,19 +121,17 @@ li {
 
 #photo {
     margin-left: 25px;
-    border: 5px solid white;
     height: 300px;
     width: 230px;
     border-radius: 10px;
+    box-shadow: -5px -3px 10px 0px rgba(0, 0, 0, 0.3);
 }
+
 
 section {
     padding: 5px
 }
 
-h1 {
-    text-align: center;
-}
 .container {
 display: table;
 box-sizing: border-box;
@@ -83,9 +165,9 @@ padding-right: 0px;
 padding-top: 0px;
 width: 1180px;
 }
+
 .content {
 display: table-cell;
-background-color: rgb(255, 255, 255);
 background-image: none;
 box-sizing: border-box;
 font-size: 16px;
@@ -101,7 +183,9 @@ padding-right: 40px;
 padding-top: 30px;
 width: 720px;
 border-radius: 10px;
+box-shadow: -7px -5px 10px 0px rgba(0, 0, 0, 0.3);
 }
+
 .primary {
 display: table-cell;
 box-sizing: border-box;
@@ -135,14 +219,12 @@ width: 320px;
 }
 .link-vk {
     text-decoration: none;
-    border: 3px solid white;
     margin: 0px 0px 0px 32px;
     width: 55px;
     height: 55px;
     display: flex;
     justify-content: center;
     align-items: center;
-    background: rgb(50%,50%,50%);
     border-radius: 10px;
     position: relative;
     transition: 0.4s;
@@ -159,14 +241,12 @@ width: 320px;
 }
 .link-in {
     text-decoration: none;
-    border: 3px solid white;
     margin: -61px 108px;
     width: 55px;
     height: 55px;
     display: flex;
     justify-content: center;
     align-items: center;
-    background: rgb(50%,50%,50%);
     border-radius: 10px;
     position: relative;
     transition: 0.4s;
@@ -183,14 +263,12 @@ width: 320px;
 }
 .link-hh {
     text-decoration: none;
-    border: 3px solid white;
     margin: -6px 189px;
     width: 55px;
     height: 55px;
     display: flex;
     justify-content: center;
     align-items: center;
-    background: rgb(50%,50%,50%);
     border-radius: 10px;
     position: relative;
     transition: 0.4s;
@@ -199,3 +277,16 @@ width: 320px;
     background: #d7001d;
     opacity: 0.4s;
 }
+
+.icon {
+    box-shadow: -3px -1px 10px 0px rgba(0, 0, 0, 0.3);
+}
+
+
+
+
+
+
+
+
+

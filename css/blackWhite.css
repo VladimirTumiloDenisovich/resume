@@ -1,0 +1,67 @@
+body.theme.white {
+    background: #DCDCDC;
+    color: #000000;
+    transition: 0.2s;
+}
+
+body.theme.black {
+    background: #6a6a6a;
+    color: #ebebeb;
+    transition: 0.2s;
+}
+
+#photo.theme.white {
+    border: 3px solid #ffffff;
+    transition: 0.2s;
+}
+
+#photo.theme.black {
+    border: 3px solid #2b2b2b;
+    transition: 0.2s;
+}
+
+.content.theme.white {
+    background-color: #ebebeb;
+    border: 2px solid #ffffff;
+    transition: 0.2s;
+}
+    
+.content.theme.black {
+    background-color: #3f3f3f;
+    border: 2px solid #2b2b2b;
+    transition: 0.2s;
+}
+
+.icon.theme.white {
+    background: #ebebeb;
+    border: 2px solid white;
+    transition: 0.2s;
+}
+
+.icon.theme.black {
+    background: #6a6a6a;
+    border: 2px solid #2b2b2b;
+    transition: 0.2s;
+}
+
+.menu-theme.white {
+    background-color: #ebebeb;
+    border: 2px solid #ffffff;
+    transition: 0.2s;
+}
+
+.menu-theme.black {
+    background-color:#6a6a6a;
+    border: 2px solid #2b2b2b;
+    transition: 0.2s;
+}
+
+.dropdown-content.white{
+    background-color: #ebebeb;
+    border: 6px solid #ebebeb;
+}
+
+.dropdown-content.black{
+    background-color: #6a6a6a;
+    border: 6px solid #6a6a6a;
+}
