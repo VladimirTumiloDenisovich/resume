@@ -33,19 +33,18 @@ body.theme.black {
 }
 
 .icon.theme.white {
-    background: #ebebeb;
     border: 2px solid white;
     transition: 0.2s;
 }
 
 .icon.theme.black {
-    background: #6a6a6a;
     border: 2px solid #2b2b2b;
     transition: 0.2s;
 }
 
 .menu-theme.white {
     background-color: #ebebeb;
+    color: #000000;
     border: 2px solid #ffffff;
     transition: 0.2s;
 }
@@ -53,6 +52,7 @@ body.theme.black {
 .menu-theme.black {
     background-color:#6a6a6a;
     border: 2px solid #2b2b2b;
+    color: #ebebeb;
     transition: 0.2s;
 }
 

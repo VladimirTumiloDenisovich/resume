@@ -86,12 +86,20 @@ header.block {
     box-shadow: -10px -4px 15px 3px rgba(0, 0, 0, .5);
 }
 
-.dropdown-content span {
+.dropdown-content a {
     display: block;
 }
 
 .dropdown:hover .dropdown-content {
     display: block;
+}
+
+.btn-language {
+    text-decoration: none;
+}
+
+.btn-language:link {
+    text-decoration: none;
 }
 
 .btn {
@@ -223,7 +231,7 @@ width: 320px;
 }
 .link-vk {
     text-decoration: none;
-    margin: 0px 0px 0px 32px;
+    margin: 0px 9px 0px 34px;
     width: 55px;
     height: 55px;
     display: flex;
@@ -233,10 +241,12 @@ width: 320px;
     position: relative;
     transition: 0.4s;
 }
+
 .link-vk:hover {
     background: #0F69F6;
     opacity: 0.4s;
 }
+
 .size-in {
     margin: 10px;
     width: 45px;
@@ -245,7 +255,7 @@ width: 320px;
 }
 .link-in {
     text-decoration: none;
-    margin: -61px 108px;
+    margin: -59px 111px;
     width: 55px;
     height: 55px;
     display: flex;
@@ -267,7 +277,7 @@ width: 320px;
 }
 .link-hh {
     text-decoration: none;
-    margin: -6px 189px;
+    margin: -4px 188px;
     width: 55px;
     height: 55px;
     display: flex;
