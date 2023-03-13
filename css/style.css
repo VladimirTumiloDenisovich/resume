@@ -67,6 +67,7 @@ header.block {
     padding: 4px 13px;
     border-radius: 7px;
     cursor: pointer;
+    user-select: none;
     box-shadow: -3px -1px 10px 0px rgba(0, 0, 0, 0.3);
 }
 
@@ -81,6 +82,7 @@ header.block {
     z-index: 1;
     background-color: #ffffff;
     border-radius: 5px;
+    user-select: none;
     box-shadow: -10px -4px 15px 3px rgba(0, 0, 0, .5);
 }
 
@@ -99,6 +101,7 @@ header.block {
     margin-bottom: 10px;
     border-radius: 7px;
     cursor: pointer;
+    user-select: none;
 }
 
 .btn:hover {
